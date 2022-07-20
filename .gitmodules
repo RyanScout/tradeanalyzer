@@ -1,0 +1,4 @@
+[submodule "tradeanalyzer/src/main/js/core"]
+	path = tradeanalyzer/src/main/js/core
+	url = https://github.com/seufster71/toasthub-react-core.git
+	branch = feature/Ed_1_on_develop
