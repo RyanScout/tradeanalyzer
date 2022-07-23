@@ -49,31 +49,36 @@ commitAll() {
 	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/member/logout
 	checkAndCommit "${1}"
 	
-	ECHO "#### member profile"
-	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/member/profile
-	checkAndCommit "${1}"
-	
-	ECHO "#### member session"
-	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/member/session
-	checkAndCommit "${1}"
-	
-	ECHO "#### member session"
-	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/member/trade
-	checkAndCommit "${1}"
-	
-	
-	
 	ECHO "#### memberView logout"
 	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/memberView/logout
+	checkAndCommit "${1}"
+	
+	
+	
+	ECHO "#### member profile"
+	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/member/profile
 	checkAndCommit "${1}"
 	
 	ECHO "#### memberView profile"
 	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/memberView/profile
 	checkAndCommit "${1}"
 	
-	ECHO "#### memberView profile"
+	
+	
+	ECHO "#### member session"
+	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/member/session
+	checkAndCommit "${1}"
+	
+	
+	
+	ECHO "#### member trade"
+	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/member/trade
+	checkAndCommit "${1}"
+	
+	ECHO "#### memberView trade"
 	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/memberView/trade
 	checkAndCommit "${1}"
+	
 	
 	
 	ECHO "#### main"
