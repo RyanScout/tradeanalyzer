@@ -41,3 +41,11 @@
 	path = tradeanalyzer/src/main/js/memberView/logout
 	url = https://github.com/seufster71/toasthub-reactweb-member-logout.git
 	branch = feature/Ed_1_on_develop
+[submodule "tradeanalyzer/src/main/js/member/trade"]
+	path = tradeanalyzer/src/main/js/member/trade
+	url = https://github.com/RyanScout/tradeanalyzer-react-trade.git
+	branch = feature/Ed_1_on_develop
+[submodule "tradeanalyzer/src/main/js/memberView/trade"]
+	path = tradeanalyzer/src/main/js/memberView/trade
+	url = https://github.com/RyanScout/tradeanalyzer-reactweb-trade.git
+	branch = feature/Ed_1_on_develop

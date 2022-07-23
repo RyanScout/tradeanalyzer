@@ -57,6 +57,12 @@ commitAll() {
 	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/member/session
 	checkAndCommit "${1}"
 	
+	ECHO "#### member session"
+	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/member/trade
+	checkAndCommit "${1}"
+	
+	
+	
 	ECHO "#### memberView logout"
 	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/memberView/logout
 	checkAndCommit "${1}"
@@ -65,6 +71,9 @@ commitAll() {
 	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/memberView/profile
 	checkAndCommit "${1}"
 	
+	ECHO "#### memberView profile"
+	cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer/src/main/js/memberView/trade
+	checkAndCommit "${1}"
 	
 	
 	ECHO "#### main"
