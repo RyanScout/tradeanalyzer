@@ -31,10 +31,17 @@ git submodule add -b feature/Ed_1_on_develop https://github.com/seufster71/toast
 cd to src/main/js/member
 git submodule add -b feature/Ed_1_on_develop https://github.com/seufster71/toasthub-react-member-session.git session
 git submodule add -b feature/Ed_1_on_develop https://github.com/seufster71/toasthub-react-member-profile.git profile
-git submodule add -b feature/Ed_1_on_develop https://github.com/seufster71/toasthub-reactweb-member-profile.git profile
 git submodule add -b feature/Ed_1_on_develop https://github.com/seufster71/toasthub-react-member-logout.git logout
+
+cd to src/main/js/memberView
+git submodule add -b feature/Ed_1_on_develop https://github.com/seufster71/toasthub-reactweb-member-profile.git profile
 git submodule add -b feature/Ed_1_on_develop https://github.com/seufster71/toasthub-reactweb-member-logout.git logout
 
+cd to src/main/js/member/trade
+git submodule add -b feature/Ed_1_on_develop https://github.com/RyanScout/tradeanalyzer-react-trade.git trade
+
+cd to src/main/js/memberView/trade
+git submodule add -b feature/Ed_1_on_develop https://github.com/RyanScout/tradeanalyzer-reactweb-trade.git trade
 
 run npm install
 
