@@ -22,13 +22,13 @@ import systemclientdomain from '../system/clientdomain/clientdomain-reducer';
 import systemapplication from '../system/application/application-reducer';
 import systemservice from '../system/service/service-reducer';
 
-import stocks from "../member/stocks/stocks-reducer";
-import crypto from "../member/crypto/crypto-reducer";
-import dashboard from "../member/dashboard/dashboard-reducer";
-import orders from "../member/orders/orders-reducer";
-import database from "../member/database/database-reducer";
-import historicalAnalysis from "../member/historical_analysis/historical-analysis-reducer";
-import trade from"../member/trade/trade-reducer";
+import stocks from "../member/trade/stocks/stocks-reducer";
+import crypto from "../member/trade/crypto/crypto-reducer";
+import dashboard from "../member/trade/dashboard/dashboard-reducer";
+import orders from "../member/trade/orders/orders-reducer";
+import database from "../member/trade/database/database-reducer";
+import historicalAnalysis from "../member/trade/historical_analysis/historical-analysis-reducer";
+import trade from"../member/trade/trade/trade-reducer";
 
 const rootReducer = combineReducers({
   appPrefs,
