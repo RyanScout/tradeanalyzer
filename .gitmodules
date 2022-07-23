@@ -1,0 +1,51 @@
+[submodule "tradeanalyzer/src/main/js/core"]
+	path = tradeanalyzer/src/main/js/core
+	url = https://github.com/seufster71/toasthub-react-core.git
+	branch = feature/Ed_1_on_develop
+[submodule "tradeanalyzer/src/main/js/coreView"]
+	path = tradeanalyzer/src/main/js/coreView
+	url = https://github.com/seufster71/toasthub-reactweb-core.git
+[submodule "tradeanalyzer/src/main/js/admin"]
+	path = tradeanalyzer/src/main/js/admin
+	url = https://github.com/seufster71/toasthub-react-admin.git
+	branch = feature/Ed_1_on_develop
+[submodule "tradeanalyzer/src/main/js/adminView"]
+	path = tradeanalyzer/src/main/js/adminView
+	url = https://github.com/seufster71/toasthub-reactweb-admin.git
+	branch = feature/Ed_1_on_develop
+[submodule "tradeanalyzer/src/main/js/system"]
+	path = tradeanalyzer/src/main/js/system
+	url = https://github.com/seufster71/toasthub-react-system.git
+	branch = feature/Ed_1_on_develop
+[submodule "tradeanalyzer/src/main/js/systemView"]
+	path = tradeanalyzer/src/main/js/systemView
+	url = https://github.com/seufster71/toasthub-reactweb-system.git
+	branch = feature/Ed_1_on_develop
+[submodule "tradeanalyzer/src/main/js/member/session"]
+	path = tradeanalyzer/src/main/js/member/session
+	url = https://github.com/seufster71/toasthub-react-member-session.git
+	branch = feature/Ed_1_on_develop
+[submodule "tradeanalyzer/src/main/js/member/profile"]
+	path = tradeanalyzer/src/main/js/member/profile
+	url = https://github.com/seufster71/toasthub-react-member-profile.git
+	branch = feature/Ed_1_on_develop
+[submodule "tradeanalyzer/src/main/js/member/logout"]
+	path = tradeanalyzer/src/main/js/member/logout
+	url = https://github.com/seufster71/toasthub-react-member-logout.git
+	branch = feature/Ed_1_on_develop
+[submodule "tradeanalyzer/src/main/js/memberView/profile"]
+	path = tradeanalyzer/src/main/js/memberView/profile
+	url = https://github.com/seufster71/toasthub-reactweb-member-profile.git
+	branch = feature/Ed_1_on_develop
+[submodule "tradeanalyzer/src/main/js/memberView/logout"]
+	path = tradeanalyzer/src/main/js/memberView/logout
+	url = https://github.com/seufster71/toasthub-reactweb-member-logout.git
+	branch = feature/Ed_1_on_develop
+[submodule "tradeanalyzer/src/main/js/member/trade"]
+	path = tradeanalyzer/src/main/js/member/trade
+	url = https://github.com/RyanScout/tradeanalyzer-react-trade.git
+	branch = feature/Ed_1_on_develop
+[submodule "tradeanalyzer/src/main/js/memberView/trade"]
+	path = tradeanalyzer/src/main/js/memberView/trade
+	url = https://github.com/RyanScout/tradeanalyzer-reactweb-trade.git
+	branch = feature/Ed_1_on_develop
