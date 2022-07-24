@@ -21,6 +21,12 @@ https://github.com/seufster71/toasthub-db.git
 run command to pull and attach submodules (make sure directories are populated)
 gitsubmodulesRyan.sh
 
+setup database need to run both files
+go to toasthub-db -> monolith -> tradeanalyzer
+maindbload.sh
+custdbload.sh
+
+
 run npm install
 
 start server
