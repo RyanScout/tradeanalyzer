@@ -5,21 +5,31 @@ Copyright (C) 2016-2022 Ryan Trade International RTI
 
 create directory gitanalyzer and clone all project into this directory  script depend on it. 
 
-
 Initial Setup
 clone the following java repos
-toasthub-core
-toasthub-member
-toasthub-security
-toasthub-admin
-toasthub-system
-toasthub-trade
-tradeanalyzer
+https://github.com/seufster71/toasthub-core.git
+https://github.com/seufster71/toasthub-member.git
+https://github.com/seufster71/toasthub-security.git
+https://github.com/seufster71/toasthub-admin.git
+https://github.com/seufster71/toasthub-system.git
+https://github.com/RyanScout/toasthub-trade.git
+https://github.com/RyanScout/tradeanalyzer.git
 
 clone db scripts
-toasthub-db
+https://github.com/seufster71/toasthub-db.git
 
-run pull command to get all git submodules
+run command to pull and attach submodules (make sure directories are populated)
+gitsubmodulesRyan.sh
+
+run npm install
+
+start server
+
+run npm start
+
+
+
+#### This just to remember how to initially add a submodule. You do not need to execute these commands ####
 place at src/main/js
 git submodule add -b feature/Ed_1_on_develop https://github.com/seufster71/toasthub-react-core.git core
 git submodule add -b feature/Ed_1_on_develop https://github.com/seufster71/toasthub-reactweb-core.git coreView
@@ -42,9 +52,3 @@ git submodule add -b feature/Ed_1_on_develop https://github.com/RyanScout/tradea
 
 cd to src/main/js/memberView/trade
 git submodule add -b feature/Ed_1_on_develop https://github.com/RyanScout/tradeanalyzer-reactweb-trade.git trade
-
-run npm install
-
-start server
-
-run web npm start
