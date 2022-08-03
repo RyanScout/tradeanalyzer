@@ -1,6 +1,6 @@
 ECHO getting submodules
 
-GIT_DIR="gitanalyzer"
+GIT_DIR="Development/gitanalyzer"
 BRANCH="feature/Ryan_1_on_develop"
 
 cd ~/$GIT_DIR/tradeanalyzer/tradeanalyzer
