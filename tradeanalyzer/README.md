@@ -24,8 +24,8 @@ gitsubmodulesRyan.sh
 setup database need to run both files
 go to toasthub-db -> monolith -> tradeanalyzer
 maindbload.sh
-custdbload.sh
-
+memberdbload.sh
+memberdatadbload.sh
 
 run npm install
 
@@ -58,3 +58,15 @@ git submodule add -b feature/Ed_1_on_develop https://github.com/RyanScout/tradea
 
 cd to src/main/js/memberView/trade
 git submodule add -b feature/Ed_1_on_develop https://github.com/RyanScout/tradeanalyzer-reactweb-trade.git trade
+
+#### Build react
+cd to tradeanalyzer then run npm run build
+
+#### Build and deploy
+cd to toasthub-core then run  mvn install
+cd to toasthub-security then run  mvn install
+cd to toasthub-system then run mvn install
+cd to toasthub-member then run  mvn install
+cd to toasthub-admin then run  mvn install
+cd to toasthub-trade then run  mvn install
+cd to tradeanalyzer then run  mvn package

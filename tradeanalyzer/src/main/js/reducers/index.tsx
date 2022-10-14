@@ -3,7 +3,7 @@ import appPrefs from "../core/common/apppref-reducer";
 import appMenus from "../core/common/appmenu-reducer";
 import status from "./status-reducer";
 import member from '../member/member-reducer';
-import session from '../member/session/session-reducer';
+import session from '../core/session/session-reducer';
 
 import adminstatus from '../admin/status/status-reducer';
 import adminusers from '../admin/users/users-reducer';

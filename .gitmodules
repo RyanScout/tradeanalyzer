@@ -21,18 +21,6 @@
 	path = tradeanalyzer/src/main/js/systemView
 	url = https://github.com/seufster71/toasthub-reactweb-system.git
 	branch = feature/Ed_1_on_develop
-[submodule "tradeanalyzer/src/main/js/member/session"]
-	path = tradeanalyzer/src/main/js/member/session
-	url = https://github.com/seufster71/toasthub-react-member-session.git
-	branch = feature/Ed_1_on_develop
-[submodule "tradeanalyzer/src/main/js/member/profile"]
-	path = tradeanalyzer/src/main/js/member/profile
-	url = https://github.com/seufster71/toasthub-react-member-profile.git
-	branch = feature/Ed_1_on_develop
-[submodule "tradeanalyzer/src/main/js/member/logout"]
-	path = tradeanalyzer/src/main/js/member/logout
-	url = https://github.com/seufster71/toasthub-react-member-logout.git
-	branch = feature/Ed_1_on_develop
 [submodule "tradeanalyzer/src/main/js/memberView/profile"]
 	path = tradeanalyzer/src/main/js/memberView/profile
 	url = https://github.com/seufster71/toasthub-reactweb-member-profile.git

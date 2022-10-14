@@ -7,6 +7,7 @@ export default function MemberView(props) {
     return (
       <div>
         {props.children}
+        <div id="MemberArea"></div>
       </div>
     );
 }
