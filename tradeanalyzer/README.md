@@ -63,10 +63,18 @@ git submodule add -b feature/Ed_1_on_develop https://github.com/RyanScout/tradea
 cd to tradeanalyzer then run npm run build
 
 #### Build and deploy
-cd to toasthub-core then run  mvn install
-cd to toasthub-security then run  mvn install
-cd to toasthub-system then run mvn install
-cd to toasthub-member then run  mvn install
-cd to toasthub-admin then run  mvn install
-cd to toasthub-trade then run  mvn install
-cd to tradeanalyzer then run  mvn package
+cd ~/gitanalyzer/toasthub-core/toasthub-core then run  mvn clean install
+cd ~/gitanalyzer/toasthub-security/toasthub-security then run  mvn clean install
+cd ~/gitanalyzer/toasthub-system/toasthub-system then run mvn clean install
+cd ~/gitanalyzer/toasthub-member/toasthub-member then run  mvn clean install
+cd ~/gitanalyzer/toasthub-admin/toasthub-admin then run  mvn clean install
+cd ~/gitanalyzer/toasthub-trade/toasthub-trade then run  mvn clean install
+cd ~/gitanalyzer/tradeanalyzer/tradeanalyzer then run  mvn clean package spring-boot:repackage
+java -jar target/tradeanalyzer-1.0-GA.jar
+
+
+#### Create db users
+CREATE USER 'cyborg'@'localhost' IDENTIFIED WITH mysql_native_password BY 'c7b8rg#P';
+
+CREATE USER 'toasthub'@'localhost' IDENTIFIED WITH mysql_native_password BY 'T0asth3b#';
+GRANT SELECT, INSERT, UPDATE, DELETE on *.* TO 'toasthub'@'localhost';

@@ -57,7 +57,7 @@ module.exports = {
   output: {
     path: BUILD_DIR + '/dist',
     filename: '[name].[contenthash].js',
-    publicPath: 'dist/',
+    publicPath: '/dist/',
     clean: true
   },
   resolve: {
