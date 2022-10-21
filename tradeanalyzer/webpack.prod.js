@@ -1,34 +1,73 @@
 const webpack = require('webpack');
-const { merge } = require('webpack-merge');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const common = require('./webpack.common.js');
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 const BUILD_DIR = path.resolve(__dirname, 'src/main/resources/static');
+const APP_DIR = path.resolve(__dirname, "src/main/js");
 
-module.exports = merge(common, {
-  devtool: 'source-map',
+module.exports = {
+  entry: { app: APP_DIR + "/App.js" },
+  devtool: "inline-source-map",
   mode: 'production',
   plugins: [
-    new UglifyJSPlugin({ sourceMap: true }),
     new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify('production') }),
-    new CleanWebpackPlugin(['./src/main/resources/static/dist']),
     new HtmlWebpackPlugin({
-    	title: 'Wave Runner',
+    	title: 'Trade Analyzer',
     	template: './src/main/js/index.html',
     	filename: BUILD_DIR + '/index.html'
-    }),
-    new webpack.HashedModuleIdsPlugin(), // so that file hashes don't change unexpectedly
+    })
   ],
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        include: APP_DIR,
+        use: {
+          loader: "babel-loader",
+          options: {
+            plugins: [
+              [
+                "@babel/plugin-transform-typescript",
+                {
+                  onlyRemoveTypeImports: true,
+                },
+              ],
+            ],
+          },
+        },
+      },
+      {
+        test: /\.jsx?/,
+        include: APP_DIR,
+        exclude: /node_modules/,
+        use: "babel-loader",
+      },
+
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+        loader: "url-loader",
+        options: { limit: 10000 },
+      },
+    ],
+  },
   output: {
     path: BUILD_DIR + '/dist',
     filename: '[name].[contenthash].js',
-    publicPath: 'dist/'
+    publicPath: '/dist/',
+    clean: true
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".jsx", ".js"],
   },
   optimization: {
 	  runtimeChunk: 'single',
+	  minimize: true,
+	  minimizer: [new TerserPlugin()],
+	  moduleIds: 'deterministic',
 	  splitChunks: {
 		  chunks: 'all',
 	      maxInitialRequests: Infinity,
@@ -49,5 +88,5 @@ module.exports = merge(common, {
 	  }
   }
 
-});
+};
 

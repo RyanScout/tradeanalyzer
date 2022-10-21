@@ -4,10 +4,11 @@ import configureStore from "./store/configureStore";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { initPublic } from "./core/common/apppref-actions";
-import { sessionCheck, viewPortChange } from "./member/session/session-actions";
+import { sessionCheck, viewPortChange } from "./core/session/session-actions";
 
 import PageContainer from "./PageContainer.js";
 import Bootstrap from "bootstrap/dist/css/bootstrap.css";
+import SiteCSS from "./site.css";
 import utils from './core/common/utils';
 
 if (process.env.NODE_ENV !== "production") {
