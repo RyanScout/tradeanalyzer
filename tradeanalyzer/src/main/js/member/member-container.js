@@ -9,9 +9,9 @@ import * as memberActions from './member-actions';
 import StatusView from '../coreView/status/status-view';
 import LoadingView from '../coreView/status/loading-view';
 import NavigationView from '../coreView/navigation/navigation-view';
-import ProfileContainer from './profile/profile-container';
+import ProfileContainer from '../core/profile/profile-container';
 import DashboardContainer from './trade/dashboard/dashboard-container';
-import LogoutContainer from './logout/logout-container';
+import LogoutContainer from '../core/logout/logout-container';
 import MemberView from '../memberView/member-view';
 import CryptoContainer from "./trade/crypto/crypto-container";
 import StocksContainer from "./trade/stocks/stocks-container";
@@ -62,7 +62,7 @@ export default function MemberContainer({location,navigate}) {
       		<Route element={<PrivateRoute permissions={myPermissions} code="MTATRADE" minRights="W" pathto="/access-denied"/>} >
 				<Route path="/ta-trade/*" element={<TradeContainer location={location} navigate={navigate}/>} />
 			</Route>
-			<Route element={<PrivateRoute permissions={myPermissions} code="MTAHA" minRights="W" pathto="/access-denied"/>} >
+			<Route element={<PrivateRoute permissions={myPermissions} code="MTAHAS" minRights="W" pathto="/access-denied"/>} >
 				<Route path="/ta-historical-analysis/*" element={<HistoricalAnalysisContainer location={location} navigate={navigate}/>} />
 			</Route>
       		<Route element={<PrivateRoute permissions={myPermissions} code="MTACACHE" minRights="W" pathto="/access-denied"/>} >
